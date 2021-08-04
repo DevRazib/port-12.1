@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	box-sizing:border-box;
+}
+.section {
+	padding: 4rem 0;
+}
+.navbar{
+	padding:0px;
+	margin:0;
+}
+.navbar-brand img{
+	width:250px;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+	color:#333;
+	text-transform: uppercase;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.items-left {
+	margin-left: auto;
+}
+.w-100 {
+	height: 100vh;
+}
+
+.story-title {
+	font-weight: 700;
+}
+
+.story-title h2 {
+	color: #2ea2d0;
+	font-size: 64px;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin: 0;
+}
+
+.story-title h2 span {
+	color: #000000;
+	font-size: 32px;
+}
+
+.readMe {
+	color: 2ea2d0;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.readMe:hover {
+	text-decoration: none;
+}
+
+.cover-bg {
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/cover-bg.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/cover-bg.jpg);
+	padding: 5rem 0;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: #fff;
+}
+
+.secondary-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+.secondary-title h2 {
+	font-size: 50px;
+}
+
+.secondary-title h2 span {
+	font-size: 30px;
+	display: block;
+}
+
+.title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #452a31;
+}
+
+.btn {
+	border-radius: 0;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 0.5rem 1.5rem;
+}
+
+.btn-primary {
+	color: #fff;
+	margin: 20px 0;
+	background-color: #2ea2d0;
+	border-color: none;
+}
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: #74bad6;
+	border-color: #74bad6;
+}
+
+.graybg-center {
+	position: relative;
+}
+
+.graybg-center::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 25%;
+	width: 100%;
+	height: 50%;
+	background-color: #f0f0f0;
+	z-index: -1;
+}
+
+.form-control.search-input {
+	border: none;
+	border-bottom: 1px solid #7f7f7f;
+	border-radius: 0;
+	color: #3d3d3d;
+}
+
+.main {
+	position: relative;
+}
+
+.icon {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	right: 0;
+	top: 70%;
+	left: 90%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+.icon img {
+	cursor: pointer;
+}
+
+.banner-section {
+	padding: 0;
+}
+
+.counterup {
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/counterupbg.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/counterupbg.jpg);
+	padding: 5rem 0;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: #fff;
+}
+
+.counterup span {
+	color: #74bad6;
+	font-size: 30px;
+}
+
+.footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px 0;
+}
+
+.footer a {
+	color: #fff;
+	display: inline-block;
+	font-size: 24px;
+	margin: 15px 10px;
+}
+
+.foote p {
+	margin-top: 74px;
+	display: block;
+}
+
+.footer p {
+	font-size: 20px;
+}
+@media screen and (min-width: 0px) and (max-width: 991px){
+	
+	/*Hamburger Menu Design */
+.hamburger{
+	position: relative;
+	height: 50px;
+	width: 60px;
+	cursor: pointer;
+	border:1px solid #ddd;
+}
+.hamburger span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	width: 30px;
+	height: 3px;
+	background:red;
+	display:block;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.hamburger span:nth-child(1){
+	margin-top: -9px;
+}
+.hamburger span:nth-child(2){
+	margin-top: 9px;
+}
+.hamburger.active span:nth-child(1){
+	-webkit-transform: translate(-50%, -50%) rotate(-45deg);
+	        transform: translate(-50%, -50%) rotate(-45deg);
+	margin-top: 0;
+}
+.hamburger.active span:nth-child(2){
+	opacity: 0;
+}
+.hamburger.active span:nth-child(3){
+	-webkit-transform: translate(-50%, -50%) rotate(45deg);
+	        transform: translate(-50%, -50%) rotate(45deg);
+	margin-top: 0;
+}
+
+	
+}
+	
